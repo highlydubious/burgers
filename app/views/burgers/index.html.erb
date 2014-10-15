@@ -1,0 +1,11 @@
+<ul>
+	<% @burgers.each do |b| %>
+	<div class="status">
+		<h2><%= b.bun %></h2>
+		<li><%= b.wellness %></li>
+		<li><%= b.mustard %></li>
+		<li><%= b.bun %></li>
+		<li><span class="admin"><%= link_to 'Show Individual Burger', burger_path(b) %></span></li>
+	</div>
+	<% end %> 
+</ul>		

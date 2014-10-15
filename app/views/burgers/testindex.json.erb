@@ -1,0 +1,16 @@
+{
+	"burger_count": "<%= @burgers.count %>"
+	"burgers": 
+
+		[
+		<% @burgers.each do |b| %>
+			{
+				"id": <%= b.id %>
+				"bun": <%= b.bun %>
+			},
+		<% end %>
+		]
+}
+
+
+<!-- Key has to be a "" string -->
